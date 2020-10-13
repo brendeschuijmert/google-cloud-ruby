@@ -123,6 +123,7 @@ module Google
           # Replace the Rails default logger
           Rails.application.config.logger = Middleware.logger
           Rails.logger = Middleware.logger
+          logger = Middleware.logger
         end
 
         ##
